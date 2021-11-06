@@ -1,0 +1,20 @@
+global_options:
+  build_web_compilers:ddc:
+    options:
+      emit-debug-symbols: false
+  build_web_compilers|entrypoint:
+    options:
+      # compiler: dart2js
+      dart2js_args:
+      # - --verbose
+      # - --disable-inlining
+      # - --no-source-maps
+
+      # - --csp
+
+      # - --minify
+      - --omit-implicit-checks
+      - --lax-runtime-type-to-string
+      - --trust-primitives
+      - --omit-as-casts
+      - --fast-startup
